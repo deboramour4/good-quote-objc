@@ -7,7 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Author.h"
+#import "Manager.h"
 
-@interface AuthorViewController : ViewController
+@interface AuthorViewController : UIViewController
+
+    @property Author* author;
+    @property Manager* m;
 
 @end

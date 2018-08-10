@@ -10,4 +10,10 @@
 
 @implementation Quote
 
+    -(id)initWithText:(NSString *)text andAuthor:(Author *)author {
+        _text = text;
+        _author = author;
+        return self;
+    }
+
 @end

@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Author.h"
 
 @interface Quote : NSObject
+    @property NSString* text;
+    @property Author* author;
+
+    -(id)initWithText:(NSString*)text andAuthor:(Author*)author;
 
 @end

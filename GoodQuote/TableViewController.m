@@ -7,6 +7,8 @@
 //
 
 #import "TableViewController.h"
+#import "QuotesViewCell.h"
+#import "QuoteViewController.h"
 
 @interface TableViewController ()
 
@@ -17,11 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if (_author != nil) {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.author.name contains[cd] %@", _author.name];
+        NSMutableArray<Quote*>* filteredArray = [[_m.quotes filteredArrayUsingPredicate:predicate] mutableCopy];
+        NSLog(@"HERE %@", filteredArray);
+        _quotes = filteredArray;
+    }else{
+        _quotes = _m.quotes;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +37,30 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [_quotes count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    Quote* quote = _quotes[indexPath.row];
     
-    // Configure the cell...
+    QuotesViewCell *cell = (QuotesViewCell*)[tableView dequeueReusableCellWithIdentifier:@"myModel" forIndexPath:indexPath];
+    
+    cell.quoteText.text = [NSString stringWithFormat:@"\"%@\"", quote.text] ;
+    cell.authorName.text = quote.author.name;
+    [cell.authorImage setImage:quote.author.image];
+    cell.quote = quote;
     
     return cell;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -85,14 +96,27 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"viewQuote"]) {
+        QuoteViewController *data = segue.destinationViewController;
+        QuotesViewCell *cell = (QuotesViewCell*)sender;
+        data.quote = cell.quote;
+        data.m = _m;
+        if (_author != nil) {
+            data.senderIdentifier = @"allAuthorQuotes";
+        }//else{
+//            data.senderIdentifier = @"allAuthorQuotes";
+//        }
+    }
 }
-*/
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    QuotesViewCell *cell = (QuotesViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"viewQuote" sender: cell];
+}
 
 @end

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Manager.h"
 
 @interface ViewController : UIViewController
 
+@property Manager* m;
 
 @end
 

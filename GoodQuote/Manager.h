@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Quote.h"
+#import "Author.h"
 
 @interface Manager : NSObject
+    @property NSMutableArray* authors;
+    @property NSMutableArray *quotes;
+    @property NSMutableArray *simbols;
+    @property NSMutableArray *titles;
+
+    -(Quote*)randomQuote;
+    -(NSString*)randomSimbol;
+    -(NSString*)randomTitle;
+    -(Author*)findAuthorByName:(NSString*)name;
 
 @end

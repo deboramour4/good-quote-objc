@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Quote.h"
+#import "Author.h"
+#import "Manager.h"
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+    @property Manager* m;
+    @property Author* author;
+    @property NSMutableArray<Quote*>* quotes;
 
 @end

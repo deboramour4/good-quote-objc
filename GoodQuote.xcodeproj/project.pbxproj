@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0403E42069205000FA09A2 /* QuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0403E32069205000FA09A2 /* QuoteViewController.m */; };
 		BE04214F2062854900A95614 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE04214E2062854900A95614 /* AppDelegate.m */; };
 		BE0421522062854900A95614 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0421512062854900A95614 /* ViewController.m */; };
 		BE0421552062854900A95614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0421532062854900A95614 /* Main.storyboard */; };
 		BE0421572062854900A95614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0421562062854900A95614 /* Assets.xcassets */; };
 		BE04215A2062854900A95614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0421582062854900A95614 /* LaunchScreen.storyboard */; };
 		BE04215D2062854900A95614 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE04215C2062854900A95614 /* main.m */; };
+		BE6590772063DDCE0026BEBC /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6590762063DDCE0026BEBC /* Author.m */; };
+		BE65907A2063DF020026BEBC /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6590792063DF020026BEBC /* Quote.m */; };
+		BE65907D2063E0AD0026BEBC /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE65907C2063E0AD0026BEBC /* Manager.m */; };
+		BE7E772C206546E400091E5A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7E772B206546E400091E5A /* TableViewController.m */; };
+		BE7E772F20654D4E00091E5A /* QuotesViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7E772E20654D4E00091E5A /* QuotesViewCell.m */; };
+		BEF8B0CA206A688300E6EE45 /* AuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF8B0C9206A688300E6EE45 /* AuthorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0403E22069205000FA09A2 /* QuoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuoteViewController.h; sourceTree = "<group>"; };
+		BE0403E32069205000FA09A2 /* QuoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuoteViewController.m; sourceTree = "<group>"; };
 		BE04214A2062854900A95614 /* GoodQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE04214D2062854900A95614 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE04214E2062854900A95614 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +35,18 @@
 		BE0421592062854900A95614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE04215B2062854900A95614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE04215C2062854900A95614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE6590752063DDCE0026BEBC /* Author.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		BE6590762063DDCE0026BEBC /* Author.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		BE6590782063DF020026BEBC /* Quote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
+		BE6590792063DF020026BEBC /* Quote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
+		BE65907B2063E0AD0026BEBC /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		BE65907C2063E0AD0026BEBC /* Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		BE7E772A206546E400091E5A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		BE7E772B206546E400091E5A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		BE7E772D20654D4E00091E5A /* QuotesViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuotesViewCell.h; sourceTree = "<group>"; };
+		BE7E772E20654D4E00091E5A /* QuotesViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuotesViewCell.m; sourceTree = "<group>"; };
+		BEF8B0C8206A688300E6EE45 /* AuthorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorViewController.h; sourceTree = "<group>"; };
+		BEF8B0C9206A688300E6EE45 /* AuthorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +79,29 @@
 		BE04214C2062854900A95614 /* GoodQuote */ = {
 			isa = PBXGroup;
 			children = (
-				BE04214D2062854900A95614 /* AppDelegate.h */,
-				BE04214E2062854900A95614 /* AppDelegate.m */,
+				BE7E772A206546E400091E5A /* TableViewController.h */,
+				BE7E772B206546E400091E5A /* TableViewController.m */,
+				BE0403E22069205000FA09A2 /* QuoteViewController.h */,
+				BE0403E32069205000FA09A2 /* QuoteViewController.m */,
 				BE0421502062854900A95614 /* ViewController.h */,
 				BE0421512062854900A95614 /* ViewController.m */,
 				BE0421532062854900A95614 /* Main.storyboard */,
 				BE0421562062854900A95614 /* Assets.xcassets */,
 				BE0421582062854900A95614 /* LaunchScreen.storyboard */,
 				BE04215B2062854900A95614 /* Info.plist */,
+				BE04214D2062854900A95614 /* AppDelegate.h */,
+				BE04214E2062854900A95614 /* AppDelegate.m */,
 				BE04215C2062854900A95614 /* main.m */,
+				BE6590752063DDCE0026BEBC /* Author.h */,
+				BE6590762063DDCE0026BEBC /* Author.m */,
+				BE6590782063DF020026BEBC /* Quote.h */,
+				BE6590792063DF020026BEBC /* Quote.m */,
+				BE65907B2063E0AD0026BEBC /* Manager.h */,
+				BE65907C2063E0AD0026BEBC /* Manager.m */,
+				BE7E772D20654D4E00091E5A /* QuotesViewCell.h */,
+				BE7E772E20654D4E00091E5A /* QuotesViewCell.m */,
+				BEF8B0C8206A688300E6EE45 /* AuthorViewController.h */,
+				BEF8B0C9206A688300E6EE45 /* AuthorViewController.m */,
 			);
 			path = GoodQuote;
 			sourceTree = "<group>";
@@ -143,8 +178,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0421522062854900A95614 /* ViewController.m in Sources */,
+				BE65907D2063E0AD0026BEBC /* Manager.m in Sources */,
 				BE04215D2062854900A95614 /* main.m in Sources */,
+				BE6590772063DDCE0026BEBC /* Author.m in Sources */,
+				BE65907A2063DF020026BEBC /* Quote.m in Sources */,
+				BE7E772C206546E400091E5A /* TableViewController.m in Sources */,
 				BE04214F2062854900A95614 /* AppDelegate.m in Sources */,
+				BE0403E42069205000FA09A2 /* QuoteViewController.m in Sources */,
+				BE7E772F20654D4E00091E5A /* QuotesViewCell.m in Sources */,
+				BEF8B0CA206A688300E6EE45 /* AuthorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YUW7D4357;
 				INFOPLIST_FILE = GoodQuote/Info.plist;
@@ -292,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YUW7D4357;
 				INFOPLIST_FILE = GoodQuote/Info.plist;

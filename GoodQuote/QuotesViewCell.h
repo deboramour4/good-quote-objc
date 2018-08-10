@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Quote.h"
 
 @interface QuotesViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *quoteText;
+@property (weak, nonatomic) IBOutlet UILabel *authorName;
+@property (weak, nonatomic) IBOutlet UIImageView *authorImage;
+
+@property Quote* quote;
 
 @end
